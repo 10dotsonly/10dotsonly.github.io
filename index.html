@@ -103,20 +103,23 @@
             list-style: disc inside;
         }
 
-        .screenshots {
-            display: flex;
-            gap: 10px;
-            justify-content: center;
-            margin: 20px 0;
-            overflow-x: auto;
-        }
+.screenshots {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 0 20px; /* Added side padding for full visibility at edges */
+}
 
-        .screenshots img {
-            max-width: 200px;
-            flex-shrink: 0;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
+.screenshots img {
+    max-width: 200px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: start; /* Ensures each image snaps into view */
+}
+
 
         .additional-links {
             margin: 20px 0;
