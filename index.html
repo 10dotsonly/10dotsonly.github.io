@@ -1,204 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="apple-itunes-app" content="app-id=6532621812, app-argument=myURL">
-    <meta name="description" content="10 Dots Only – a fast-paced tap survival game where the rule is simple: don’t let the screen fill with more than 10 dots.">
-    <meta name="keywords" content="10 Dots Only, tap game, reflex game, mobile game, survival game, casual game">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="apple-itunes-app" content="app-id=6532621812, app-argument=myURL" />
+  <meta name="description" content="10 Dots Only – a fast-paced tap survival game where the rule is simple: don’t let the screen fill with more than 10 dots." />
+  <meta name="keywords" content="10 Dots Only, tap game, reflex game, mobile game, survival game, casual game" />
+  <meta property="og:title" content="10 Dots Only - Fast-paced reflex tap game" />
+  <meta property="og:description" content="10 Dots Only is a fast-paced tap survival game where the rule is simple: don’t let the screen fill with more than 10 dots." />
+  <meta property="og:image" content="https://10dotsonly.github.io/logo.png" />
+  <meta property="og:url" content="https://10dotsonly.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="10 Dots Only - Fast-paced reflex tap game" />
+  <meta name="twitter:description" content="10 Dots Only is a fast-paced tap survival game where the rule is simple: don’t let the screen fill with more than 10 dots. Available on the App Store." />
+  <meta name="twitter:image" content="https://10dotsonly.github.io/logo.png" />
 
-    <meta property="og:title" content="10 Dots Only - Fast-paced reflex tap game">
-    <meta property="og:description" content="10 Dots Only is a fast-paced tap survival game where the rule is simple: don’t let the screen fill with more than 10 dots.">
-    <meta property="og:image" content="https://10dotsonly.github.io/logo.png">
-    <meta property="og:url" content="https://10dotsonly.github.io/">
-    <meta property="og:type" content="website">
+  <title>10 Dots Only - Fast-paced reflex tap game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+      text-align: center;
+      width: 100%;
+    }
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="10 Dots Only - Fast-paced reflex tap game">
-    <meta name="twitter:description" content="10 Dots Only is a fast-paced tap survival game where the rule is simple: don’t let the screen fill with more than 10 dots. Available on the App Store.">
-    <meta name="twitter:image" content="https://10dotsonly.github.io/logo.png">
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
 
-    <title>10 Dots Only - Fast-paced reflex tap game</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
-            text-align: center;
-            width: 100%;
-        }
+    .top-links {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 0.9em;
+    }
 
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            position: relative;
-        }
+    .top-links a {
+      color: #555;
+      text-decoration: none;
+      margin-left: 15px;
+    }
 
-        .top-links {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            font-size: 0.9em;
-        }
+    .top-links a:hover {
+      color: #FF6F61;
+    }
 
-        .top-links a {
-            color: #555;
-            text-decoration: none;
-            margin-left: 15px;
-        }
+    .top-links a.contact {
+      font-weight: bold;
+    }
 
-        .top-links a:hover {
-            color: #FF6F61;
-        }
+    .top-spacer {
+      height: 60px;
+    }
 
-        .logo {
-            width: 140px;
-            margin: 0 auto 20px;
-            display: block;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            background-color: #ffffff;
-            border: 2px solid #f0f0f0;
-        }
+    .logo {
+      width: 140px;
+      margin: 0 auto 20px;
+      display: block;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+      border: 2px solid #f0f0f0;
+    }
 
-        h1 {
-            font-family: 'Lora', serif;
-            font-size: 2.5em;
-            margin: 10px 0;
-            color: #333;
-        }
+    h1 {
+      font-family: 'Lora', serif;
+      font-size: 2.5em;
+      margin: 10px 0;
+      color: #333;
+    }
 
-        h2 {
-            font-size: 1.5em;
-            margin: 10px 0;
-            color: #555;
-        }
+    h2 {
+      font-size: 1.5em;
+      margin: 10px 0;
+      color: #555;
+    }
 
-        .download-section {
-            margin: 20px 0 30px;
-        }
+    .download-section {
+      margin: 20px 0 30px;
+    }
 
-        .download-section a img {
-            height: 60px;
-            filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.2));
-            transition: transform 0.3s ease;
-        }
+    .download-section a img {
+      height: 60px;
+      filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.2));
+      transition: transform 0.3s ease;
+    }
 
-        .download-section a img:hover {
-            transform: scale(1.05);
-        }
+    .download-section a img:hover {
+      transform: scale(1.05);
+    }
 
-        .subtitle {
-            font-size: 1.2em;
-            line-height: 1.8;
-            color: #555;
-            margin-bottom: 20px;
-            padding: 0 20px;
-            background: #f9f9f9;
-            border-left: 4px solid #FF6F61;
-            border-radius: 5px;
-            display: inline-block;
-            text-align: left;
-        }
+    .subtitle {
+      font-size: 1.2em;
+      line-height: 1.8;
+      color: #555;
+      margin-bottom: 20px;
+      padding: 0 20px;
+      background: #f9f9f9;
+      border-left: 4px solid #FF6F61;
+      border-radius: 5px;
+      display: inline-block;
+      text-align: left;
+    }
 
-        .features-list {
-            text-align: left;
-            margin: 20px auto;
-            padding: 0 20px;
-            list-style: disc inside;
-        }
+    .features-list {
+      text-align: left;
+      margin: 20px auto;
+      padding: 0 20px;
+      list-style: disc inside;
+    }
 
-        .screenshots {
-            display: flex;
-            gap: 10px;
-            margin: 20px 0;
-            overflow-x: auto;
-            scroll-snap-type: x mandatory;
-            padding: 0 20px;
-        }
+    .screenshots {
+      display: flex;
+      gap: 10px;
+      margin: 20px 0;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding: 0 20px;
+    }
 
-        .screenshots img {
-            max-width: 200px;
-            flex-shrink: 0;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            scroll-snap-align: start;
-        }
+    .screenshots img {
+      max-width: 200px;
+      flex-shrink: 0;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      scroll-snap-align: start;
+    }
 
-        @media screen and (max-width: 600px) {
-            h1 {
-                font-size: 2em;
-            }
-            .subtitle {
-                font-size: 1em;
-            }
-            .screenshots img {
-                max-width: 100px;
-            }
-            .top-links {
-                font-size: 0.8em;
-                top: 10px;
-                right: 10px;
-            }
-            .top-links a {
-                margin-left: 10px;
-            }
-        }
-    </style>
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      .subtitle {
+        font-size: 1em;
+      }
+
+      .screenshots img {
+        max-width: 100px;
+      }
+
+      .top-links {
+        font-size: 0.8em;
+        top: 10px;
+        right: 10px;
+      }
+
+      .top-links a {
+        margin-left: 10px;
+      }
+
+      .top-spacer {
+        height: 80px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="top-links">
-            <a href="terms.html">Terms</a>
-            <a href="privacy.html">Privacy</a>
-            <a href="mailto:tendotsonly@icloud.com">Contact</a>
-        </div>
-
-        <img src="logo.png" alt="10 Dots Only Logo" class="logo">
-
-        <h1>10 Dots Only</h1>
-        <h2>Fast-paced reflex tap game</h2>
-
-        <p class="subtitle">10 Dots Only is a fast-paced tap survival game where the rule is simple: don’t let the screen fill with more than 10 dots. That’s it. Sounds easy? Think again.</p>
-
-        <p style="text-align: left;">As dots multiply, your reflexes, timing, and decision-making are pushed to the limit. Different dot types bring different behaviors—some freeze, some poison, some teleport. And you’ll need every passive skill and upgrade to keep up.</p>
-
-        <h3 style="text-align: left;">Features:</h3>
-
-        <ul class="features-list">
-            <li><strong>One Rule Gameplay:</strong> Never let the dots reach 10.</li>
-            <li><strong>Dot Variety:</strong> Frozen, Poison, Golden, Teleporting, and more.</li>
-            <li><strong>Passive Skills:</strong> Upgrade abilities like Magnet Pull, Chain Reaction, and Golden Luck.</li>
-            <li><strong>Tournaments:</strong> Compete in recurring events to climb ranks and earn rewards.</li>
-            <li><strong>Daily Quests:</strong> Complete missions to earn coins and blueprints.</li>
-            <li><strong>Level-Based Progression:</strong> Unlock new dot types and skills as you level up.</li>
-            <li><strong>Core Haptics & Sound FX:</strong> Feel every tap and explosion with satisfying feedback.</li>
-        </ul>
-
-        <p style="text-align: left;">Easy to pick up. Hard to master. Can you stay under 10?</p>
-
-        <div class="download-section">
-            <a href="">
-                <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/en-us.svg" alt="Download on the App Store">
-            </a>
-        </div>
-
-        <div class="screenshots">
-            <img src="img/1.png" alt="Screenshot 1">
-            <img src="img/2.png" alt="Screenshot 2">
-            <img src="img/3.png" alt="Screenshot 3">
-            <img src="img/4.png" alt="Screenshot 4">
-            <img src="img/5.png" alt="Screenshot 5">
-            <img src="img/6.png" alt="Screenshot 6">
-        </div>
+  <div class="container">
+    <div class="top-links">
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="mailto:tendotsonly@icloud.com" class="contact">Contact Us</a>
     </div>
+
+    <div class="top-spacer"></div>
+
+    <img src="logo.png" alt="10 Dots Only Logo" class="logo" />
+
+    <h1>10 Dots Only</h1>
+    <h2>Fast-paced reflex tap game</h2>
+
+    <p class="subtitle">
+      10 Dots Only is a fast-paced tap survival game where the rule is simple:
+      don’t let the screen fill with more than 10 dots. That’s it. Sounds easy?
+      Think again.
+    </p>
+
+    <p style="text-align: left;">
+      As dots multiply, your reflexes, timing, and decision-making are pushed to
+      the limit. Different dot types bring different behaviors—some freeze, some
+      poison, some teleport. And you’ll need every passive skill and upgrade to
+      keep up.
+    </p>
+
+    <h3 style="text-align: left;">Features:</h3>
+
+    <ul class="features-list">
+      <li><strong>One Rule Gameplay:</strong> Never let the dots reach 10.</li>
+      <li><strong>Dot Variety:</strong> Frozen, Poison, Golden, Teleporting, and more.</li>
+      <li><strong>Passive Skills:</strong> Upgrade abilities like Magnet Pull, Chain Reaction, and Golden Luck.</li>
+      <li><strong>Tournaments:</strong> Compete in recurring events to climb ranks and earn rewards.</li>
+      <li><strong>Daily Quests:</strong> Complete missions to earn coins and blueprints.</li>
+      <li><strong>Level-Based Progression:</strong> Unlock new dot types and skills as you level up.</li>
+      <li><strong>Core Haptics & Sound FX:</strong> Feel every tap and explosion with satisfying feedback.</li>
+    </ul>
+
+    <p style="text-align: left;">Easy to pick up. Hard to master. Can you stay under 10?</p>
+
+    <div class="download-section">
+      <a href="">
+        <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/en-us.svg" alt="Download on the App Store" />
+      </a>
+    </div>
+
+    <div class="screenshots">
+      <img src="img/1.png" alt="Screenshot 1" />
+      <img src="img/2.png" alt="Screenshot 2" />
+      <img src="img/3.png" alt="Screenshot 3" />
+      <img src="img/4.png" alt="Screenshot 4" />
+      <img src="img/5.png" alt="Screenshot 5" />
+      <img src="img/6.png" alt="Screenshot 6" />
+    </div>
+  </div>
 </body>
 </html>
