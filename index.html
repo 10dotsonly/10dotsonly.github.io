@@ -18,8 +18,6 @@
     <meta name="twitter:description" content="10 Dots Only is a fast-paced tap survival game where the rule is simple: don’t let the screen fill with more than 10 dots. Available on the App Store.">
     <meta name="twitter:image" content="https://10dotsonly.github.io/logo.png">
 
-
-    
     <title>10 Dots Only - Fast-paced reflex tap game</title>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <style>
@@ -40,6 +38,24 @@
             background-color: #ffffff;
             border-radius: 10px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .top-links {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 0.9em;
+        }
+
+        .top-links a {
+            color: #555;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+        .top-links a:hover {
+            color: #FF6F61;
         }
 
         .logo {
@@ -100,52 +116,23 @@
             list-style: disc inside;
         }
 
-.screenshots {
-    display: flex;
-    gap: 10px;
-    margin: 20px 0;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    padding: 0 20px; /* Added side padding for full visibility at edges */
-}
-
-.screenshots img {
-    max-width: 200px;
-    flex-shrink: 0;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    scroll-snap-align: start; /* Ensures each image snaps into view */
-}
-
-
-        .additional-links {
-            margin: 20px 0;
+        .screenshots {
             display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 15px;
+            gap: 10px;
+            margin: 20px 0;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            padding: 0 20px;
         }
 
-        .additional-links a img {
-            height: 54px;
+        .screenshots img {
+            max-width: 200px;
+            flex-shrink: 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            scroll-snap-align: start;
         }
 
-        nav {
-            margin-top: 20px;
-        }
-
-        nav a {
-            color: #888;
-            text-decoration: none;
-            margin: 0 10px;
-            font-size: 0.9em;
-        }
-
-        nav a:hover {
-            color: #FF6F61;
-        }
-
-        /* Responsive styles */
         @media screen and (max-width: 600px) {
             h1 {
                 font-size: 2em;
@@ -156,11 +143,25 @@
             .screenshots img {
                 max-width: 100px;
             }
+            .top-links {
+                font-size: 0.8em;
+                top: 10px;
+                right: 10px;
+            }
+            .top-links a {
+                margin-left: 10px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <div class="top-links">
+            <a href="terms.html">Terms</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="mailto:tendotsonly@icloud.com">Contact</a>
+        </div>
+
         <img src="logo.png" alt="10 Dots Only Logo" class="logo">
 
         <h1>10 Dots Only</h1>
@@ -168,7 +169,8 @@
 
         <p class="subtitle">10 Dots Only is a fast-paced tap survival game where the rule is simple: don’t let the screen fill with more than 10 dots. That’s it. Sounds easy? Think again.</p>
 
-<p style="text-align: left;">As dots multiply, your reflexes, timing, and decision-making are pushed to the limit. Different dot types bring different behaviors—some freeze, some poison, some teleport. And you’ll need every passive skill and upgrade to keep up.</p>
+        <p style="text-align: left;">As dots multiply, your reflexes, timing, and decision-making are pushed to the limit. Different dot types bring different behaviors—some freeze, some poison, some teleport. And you’ll need every passive skill and upgrade to keep up.</p>
+
         <h3 style="text-align: left;">Features:</h3>
 
         <ul class="features-list">
@@ -181,7 +183,7 @@
             <li><strong>Core Haptics & Sound FX:</strong> Feel every tap and explosion with satisfying feedback.</li>
         </ul>
 
-<p style="text-align: left;">Easy to pick up. Hard to master. Can you stay under 10?</p>
+        <p style="text-align: left;">Easy to pick up. Hard to master. Can you stay under 10?</p>
 
         <div class="download-section">
             <a href="">
@@ -197,15 +199,6 @@
             <img src="img/5.png" alt="Screenshot 5">
             <img src="img/6.png" alt="Screenshot 6">
         </div>
-
-
-
-        <nav>
-            <a href="terms.html">Terms of Use</a> | 
-            <a href="privacy.html">Privacy Policy</a>
-        </nav>
-       <nav>For questions, feedback, or technical support regarding <b></b>10 Dots Only</b>, please contact us 
-<a href="mailto:tendotsonly@icloud.com">here</a> </nav>
     </div>
 </body>
 </html>
