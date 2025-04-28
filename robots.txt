@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /terms.html
+Disallow: /privacy.html
+
+Sitemap: https://10dotsonly.github.io/sitemap.xml
